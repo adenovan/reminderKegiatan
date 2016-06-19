@@ -1,0 +1,26 @@
+<ion-view view-title="Login"> 	
+<ion-content padding="true" class="bg-gmbr">
+<div class="list card mid">
+   <div class="bar bar-header bg-biru text-white" style="position: static;">
+ 	    <h4 class="title text-white" style="position:relative;">Form Login</h4>
+   </div>
+   <label class="item item-input item-floating-label" style="border:none;padding:8px 16px 8px 16px;">
+      <span class="input-label">Email</span>
+   		<input type="email" placeholder="Email" name="email" ng-model="user.email">
+      <div class="divider"></div>
+    </label>
+    <label class="item item-input item-floating-label" style="border:none;padding:8px 16px 8px 16px;">
+    <span class="input-label">Password</span>
+        <input type="password" placeholder="Password" name="password" ng-model="user.password">
+        <div class="divider"></div>
+    </label>
+    <div class="item item-button-right">
+    <button class="button button-flat button-stable bg-biru ink" style="font-weight: medium;
+	font-size: 14px;" ng-click="login(user)">
+	Login
+	</button>
+
+    </div>
+</div>
+</ion-content>
+</ion-view>

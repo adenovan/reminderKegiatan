@@ -1,0 +1,47 @@
+<ion-view view-title="Kelola User">
+        <search-bar ng-model="search"></search-bar>
+        <ion-content>
+        <div class="tabs-striped tabs-color-positive" style="position: static; margin-bottom: 15px;">
+            <div class="tabs" style="position: static;">
+                <a nav-clear class="tab-item" data-ink-color="#43a047" data-ink-opacity=".20" href="#/super/user1">
+                    ADMIN
+                </a>
+                <a nav-clear class="tab-item active" data-ink-color="#43a047" data-ink-opacity=".20" href="#/super/user2">
+                    SENAT
+                </a>
+                <a nav-clear class="tab-item" data-ink-color="#43a047" data-ink-opacity=".20" href="#/super/user3">
+                    BALMA
+                </a>
+            </div>
+        </div>
+        <div class="center" ng-show="!senatList" style="text-align:center;"><ion-spinner></ion-spinner></div>
+        <div class="padding">
+                <div class="card item-text-wrap" ng-show="senatList" ng-repeat="senat in senatList" ng-controller="inkCtrl"> <!-- repeat !-->
+                 <div class="item">
+                    <div class="row">
+                        <div class="col col-80">
+                            <span class="body-1-bold">{{senat.nama_user}}</span>
+                            <br/>
+                            <span class="body-1">{{senat.email_user}}</span>
+                            <br/>
+                            <span class="body-1">{{senat.no_handphone}}</span>
+                        </div>
+                        <div>
+                            <img ng-src="{{senat.type + senat.foto_user}}" class="avatar-right col">
+                        </div>
+                    </div>
+                 </div>         
+                 <div class="right" style="background:#fff!important;">
+                      <div ng-show="loading" style="float:left;padding-top:8px;padding-right:10px;"><ion-spinner icon="android" class="spinner-positive"></ion-spinner></div>
+                      <a class="button button-clear button-positive" data-ink-color="#2196f3" data-ink-opacity=".35" ng-href="#/editUser/{{senat.ID_User}}">SUNTING</a>
+                      <a class="button button-clear button-positive" data-ink-color="#2196f3" data-ink-opacity=".35" ng-click="deleteUser(senat.ID_User,senat.nama_user)">HAPUS</a>
+                 </div>
+                </div>
+
+        </div>
+
+        </ion-content>
+        <button id="fab" class="button button-balanced button-fab button-fab-bottom-right" ng-click="changeLocation('addUser','senat')">
+            <i class="icon ion-plus"></i>
+        </button>
+</ion-view>

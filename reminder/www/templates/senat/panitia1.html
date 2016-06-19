@@ -1,0 +1,43 @@
+<ion-view view-title="Kelola Panitia">
+		<search-bar ng-model="search"></search-bar>
+	    <ion-content>
+        <div class="tabs-striped tabs-color-positive" style="position: static; margin-bottom: 15px;">
+            <div class="tabs" style="position: static;">
+                <a nav-clear class="tab-item active" data-ink-color="#43a047" data-ink-opacity=".20" href="#/senat/panitia1">
+                    AKTIF
+                </a>
+                <a nav-clear class="tab-item" data-ink-color="#43a047" data-ink-opacity=".20" href="#/senat/panitia2">
+                    TIDAK AKTIF
+                </a>
+            </div>
+        </div>
+        <div class="center" ng-show="!panitiaAktif" style="text-align:center;"><ion-spinner></ion-spinner></div>
+        <div class="padding">
+        		<div class="card item-text-wrap" ng-show="panitiaAktif" ng-repeat="panitia in panitiaAktif" ng-controller="inkCtrl"> <!-- repeat !-->
+	        	 <div class="item">
+				  	<div class="row">
+				  		<div class="col col-80" >
+				  			<span class="body-1-bold">{{panitia.nama_user}}</span>
+				  			<br/>
+				  			<span class="body-1">{{panitia.email_user}}</span>
+				  			<br/>
+				  			<span class="body-1">{{panitia.nim}}</span>
+				  			<br/>
+				  			<span class="body-1">{{panitia.no_handphone}}</span>
+				  		</div>
+				  		<div>
+				  			<img ng-src="{{panitia.type + panitia.foto_user}}" class="avatar-right col">
+				  		</div>
+				  	</div>
+				 </div>       	
+		         <div class="right" style="background:#fff!important;">
+				  	  <div ng-show="loading" style="float:left;padding-top:8px;padding-right:10px;"><ion-spinner icon="android" class="spinner-positive"></ion-spinner></div>
+                      <a class="button button-clear button-positive" data-ink-color="#2196f3" data-ink-opacity=".35" ng-href="#/editPanitia/{{panitia.ID_User}}">SUNTING</a>
+			 	 </div>
+	        	</div>
+        </div>
+	    </ion-content>
+        <button id="fab" class="button button-balanced button-fab button-fab-bottom-right" ng-click="changeLocation('addPanitia')">
+            <i class="icon ion-plus"></i>
+        </button>
+</ion-view>

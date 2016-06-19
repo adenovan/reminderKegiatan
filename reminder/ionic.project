@@ -1,0 +1,11 @@
+{
+  "name": "reminder",
+  "app_id": "ef15d8cd",
+  "browsers": [
+    {
+      "platform": "android",
+      "browser": "crosswalk",
+      "version": "12.41.296.5"
+    }
+  ]
+}

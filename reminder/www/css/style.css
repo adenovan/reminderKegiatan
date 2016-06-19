@@ -1,0 +1,354 @@
+/* Empty. Add your own CSS if you like */
+.mid{
+  margin-top: 50%;
+  width: 100%;
+  /*
+  Nope =(
+  margin-left: -25%;
+  margin-top: -25%;
+  */
+
+  /* 
+  Yep!
+  */
+  
+  /*
+  Not even necessary really. 
+  e.g. Height could be left out!
+  */
+
+}
+
+.bg-gmbr{
+	background: url("../img/mobile2.png") no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.select-modal{
+	border-bottom: 1px solid #2196f3!important;
+	border-radius: 4px;
+}
+
+.select-modal .button{
+	width: 100%;
+	min-height: 47px;
+	text-align: left;
+	padding: 0px 0px 0px 0px;
+}
+
+.select-modal .isi{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .010em;
+    line-height: 20px;
+    padding: 0px 0px 0px 0px;
+    color: #757575;
+}
+
+.button-modal{
+    border-color: #b2b2b2;
+    background-color: #f8f8f8!important;
+    background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
+    color: #444!important;
+	max-width: 120px!important;
+	width: 120px!important;
+	font-size: 12px!important;
+    font-weight: 400!important;
+    letter-spacing: .010em;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.button-modal:hover{
+    border-color: #b2b2b2;
+    background-color: #f8f8f8!important;
+    background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
+    color: #444!important;
+	max-width: 120px!important;
+	width: 120px!important;
+		font-size: 12px!important;
+    font-weight: 400!important;
+    letter-spacing: .010em;
+    line-height: 20px;
+}
+.bar-balanced{
+	background-color:rgb(76,175,80)!important;
+}
+
+.button-raised-biru{
+	color: #fff;
+	background-color: #2196f3;
+}
+
+.button-raised-biru:hover{
+	color: #fff;
+	background-color: #387ef5;
+}
+
+.button-raised-hijau{
+	color: #fff;
+	background-color: rgb(67,160,71)!important;
+}
+
+.button-raised-hijau:hover{
+	color: #fff;
+	background-color: rgb(76,175,80)!important;
+}
+
+
+
+.item-input{
+	padding:8px 16px 8px 16px;
+}
+
+.side-positive{
+	color:#1565C0!important;
+    background: rgba(0,0,0,.12);
+}
+
+.side-normal{
+	color: #000;
+	background: #fff;
+}
+
+
+.tabs-striped.tabs-color-positive .tab-item.tab-item-active, .tabs-striped.tabs-color-positive .tab-item.active, .tabs-striped.tabs-color-positive .tab-item.activated {
+    color: #387ef5;
+    border: 0 solid  rgb(67,160,71);
+    border-top-width: 0px;
+    border-bottom-width:2px; 
+    margin:0;
+}
+
+.spinner svg {
+  width: 28px;
+  height: 28px;
+  stroke: #2196f3;
+  fill: #2196f3;
+}
+
+.button-positive-biru{
+	color:rgb(33,150,243)!important;
+	font-weight: 400;
+}
+
+.block {
+display: inline-block;
+}
+
+.text-white{
+	color:#fff!important;
+}
+
+.input-label{
+color:rgb(33,150,243)!important;
+}
+
+.text-positive{
+	color:rgb(33,150,243)!important;
+}
+
+.divider{
+    display: block;
+    border-top-width: 1px;
+    border-top-style: solid;
+    margin: 0;
+    border-top-color: rgba(0,0,0,0.12);
+}
+
+.border-abu-bawah{
+	border-bottom-width: 1px!important;
+	border-bottom-style: solid!important; 
+	border-bottom-color: rgba(0,0,0,0.12)!important;
+}
+
+.foto-evaluasi{
+	width: 80%;
+	height: 80%;
+}
+.avatar-right{
+	float: right;
+	position: static;
+	width: 60px;
+	height: 60px;
+}
+
+.avatar-evaluasi{
+	width: 60px;
+	height: 60px;
+}
+
+.avatar-panitia{
+	width: 90px;
+	height: 90px;
+}
+
+.card-right{
+	min-height: 60px;
+}
+.headline{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.sub-headline{
+	font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .005em;
+}
+
+.body-1{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .010em;
+    line-height: 20px;
+}
+
+.body-1-bold{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .010em;
+    line-height: 20px;
+}
+
+.caption{
+    color: #757575;
+	font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .010em;
+    line-height: 20px;
+}
+
+.item-notif{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.item-icon-left .icon{
+	font-size: 24px;
+	left: 11px;
+}
+
+.icon-font{
+	font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .010em;
+    line-height: 20px;
+	position: absolute;
+	top:18px;
+	left:50px;
+}
+.icon{
+	font-size: 24px;
+}
+
+.icon-normal{
+	font-size: 14px;
+}
+
+.icon-navbar{
+	font-style: 22px;
+}
+.bg-abu{
+	    background: rgba(0,0,0,.12);
+}
+
+.bg-biru{
+	background: rgb(33,150,243)!important;
+}
+
+.bg-biru-tua{
+	background: rgb(21,101,192)!important;
+}
+
+.tp-button{
+	font-weight: medium;
+	font-size: 14px;
+}
+.center{
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+
+.right{
+	float:right;
+}
+
+.centerHalf{
+	width: 90%;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+
+/* ------- SEARCH ----*/
+.searchBar {
+	color: #fff;
+	margin: 0 !important;
+	padding: 4px;
+}
+.searchBar .icon {
+	font-size: 24px;
+	color:#fff;
+	line-height: 1.5;	
+	padding-right: 6px;
+	padding-left: 6px;
+}
+.searchBar .searchTxt {
+	left: 55px;
+	width: calc(100% - 100px);
+	position: fixed;
+	height: calc(100% - 10px);
+}
+.searchBar.numicons2 .searchTxt {
+	width: calc(100% - 135px);
+}
+.searchBar .searchTxt > .bgdiv { 
+	background-color: rgb(33,150,243)!important;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 1;
+}
+.searchBar .searchTxt > .bgtxt {
+	position: absolute;
+	color:#fff;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.searchBar .searchTxt input {
+	background-color: #f6f6f6;
+	border-radius: 4px;
+	color: #aaa;
+	width: 80%;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-right:5px;
+}
+
+.searchBar .searchTxt button{
+	width: 20%;
+	float:right;
+	color: #fff;
+	font-weight: bold;
+}
+
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  display: none;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}

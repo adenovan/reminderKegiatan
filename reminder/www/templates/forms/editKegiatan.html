@@ -1,0 +1,80 @@
+<ion-view view-title="Edit Kegiatan">
+	<ion-header-bar align-title="left" class="bar bar-balanced bg-biru">
+      <button class="button button-icon button-clear ion-android-arrow-back" ng-click="goBack()">
+      </button>
+	  <h1 class="title">Edit Kegiatan</h1>
+	</ion-header-bar>
+	<ion-content padding="true">
+	<div class="select-modal" >
+	<button class="button button-clear button-stable " modal-select ng-model="data.panitia" options="panitia" modal-title="Pilih Panitia Kegiatan" >
+		<span>Panitia Kegiatan</span>
+		<i class="icon ion-arrow-down-b" style="display:inline-block;"></i>
+	    <div class="option">
+	        {{option.nama_user}}
+	    </div>
+	</button>
+	<div class="isi">{{data.panitia.nama_user}}</div>
+	</div>
+
+	<div class="select-modal" >
+	<button class="button button-clear button-stable" modal-select ng-model="data.ukm" options="ukm" modal-title="Pilih Ormawa" >
+		<span>Ormawa</span>
+		<i class="icon ion-arrow-down-b" style="display:inline-block;"></i>
+	    <div class="option">
+	        {{option.nama_ukm}}
+	    </div>
+	</button>
+	<div class="isi">{{data.ukm.nama_ukm}}</div>
+	</div>
+
+	<div class="select-modal" >
+	<button class="button button-clear button-stable " modal-select ng-model="data.refrensi" options="refrensi" modal-title="Pilih Refrensi Kegiatan" >
+		<span>Refrensi Kegiatan</span>
+		<i class="icon ion-arrow-down-b" style="display:inline-block;"></i>
+	    <div class="option">
+	        {{option.nama_kegiatan}}
+	    </div>
+	</button>
+	<div class="isi">{{data.refrensi.nama_kegiatan}}</div>
+	</div>
+
+	<label class="item item-input item-floating-label" style="color:rgb(33,150,243);border:none;padding:0;border-bottom: 1px solid #2196f3!important;">
+   		<span class="input-label" style="color:#757575!important;">Nama Kegiatan</span>
+   		<input type="text" placeholder="Nama" name="nama_kegiatan" ng-model="data.nama_kegiatan" >
+   	</label> 
+
+   	<label class="item item-input item-floating-label" style="color:rgb(33,150,243);border:none;padding:0;border-bottom: 1px solid #2196f3!important;">
+   		<span class="input-label" style="color:#757575!important;">Lokasi Kegiatan</span>
+   		<input type="text" placeholder="Lokasi Kegiatan" name="lokasi_kegiatan" ng-model="data.lokasi_kegiatan" >
+   	</label> 
+
+   	<label class="item item-input item-floating-label" style="color:rgb(33,150,243);border:none;padding:0;border-bottom: 1px solid #2196f3!important;">
+   		<span class="input-label" style="color:#757575!important;">Dekripsi Kegiatan</span>
+   		<input type="text" placeholder="Deskripsi Kegiatan" name="deskripsi_kegiatan" ng-model="data.deskripsi_kegiatan" >
+   	</label> 
+
+   	<label class="item item-input" style="color:rgb(33,150,243);border:none;padding:16px 0px 0px 0px;border-bottom: 1px solid #2196f3!important;">
+  		<span class="input-label body-1" style="color:#757575!important;">Tanggal Audiensi</span>
+  		<input type="date" ng-model="data.tanggal_audiensi">
+	</label>
+
+	<label class="item item-input" style="color:rgb(33,150,243);border:none;padding:16px 0px 0px 0px;border-bottom: 1px solid #2196f3!important;">
+  		<span class="input-label body-1" style="color:#757575!important;">Jam Audiensi</span>
+  		<input type="time" ng-model="data.time_audiensi">
+	</label>
+
+	<label class="item item-input" style="color:rgb(33,150,243);border:none;padding:16px 0px 0px 0px;border-bottom: 1px solid #2196f3!important;">
+  		<span class="input-label body-1	" style="color:#757575!important;">Tanggal Kegiatan</span>
+  		<input type="date" ng-model="data.tanggal_kegiatan">
+	</label>
+
+	<label class="item item-input" style="color:rgb(33,150,243);border:none;padding:16px 0px 0px 0px;border-bottom: 1px solid #2196f3!important;">
+  		<span class="input-label body-1	" style="color:#757575!important;">Jam Kegiatan</span>
+  		<input type="time" ng-model="data.time_kegiatan">
+	</label>
+	
+	 <div class="right" style="background:#fff!important; padding:16px;">
+        <a class="button button-raised button-raised-biru" data-ink-color="#43A047" data-ink-opacity=".35" ng-click="edit()">Edit</a>
+	</div>
+	</ion-content>
+</ion-view>

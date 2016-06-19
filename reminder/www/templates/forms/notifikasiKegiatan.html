@@ -1,0 +1,131 @@
+<ion-view view-title="Notifikasi Kegiatan">
+	<ion-header-bar align-title="left" class="bar bar-balanced bg-biru">
+      <button class="button button-icon button-clear ion-android-arrow-back" ng-click="goBack()">
+      </button>
+	  <h1 class="title">Notifikasi Kegiatan</h1>
+	</ion-header-bar>
+	<ion-content padding="true">
+		<div class="center" ng-show="!kegiatan" style="text-align:center;"><ion-spinner></ion-spinner></div>
+		<div class="card item-text-wrap" ng-show="kegiatan">
+		  <div class="item">
+		  	<div class="row">
+		  		<div class="col col-80">
+		  			<span class="headline">{{kegiatan.nama_kegiatan}}</span>
+		  			<br/>
+		  			<span class="caption"><i class="ion-calendar" style="font-size:16px;"></i> {{kegiatan.tanggal_kegiatan}}</span>
+		  		</div>
+		  		<div>
+		  			<img ng-src="{{kegiatan.type + kegiatan.logo_ukm}}" class="avatar-right col">
+		  		</div>
+		  	</div>
+		  </div>
+		  <div class="divider"></div>
+				<ion-list class="list padding">
+			        <div ng-controller="infoPanitiaCtrl"> <!-- ketua panitia !-->
+			          <div class="padding ink"
+			                    ng-click="getpanitia(kegiatan.id_panitia)"
+			                    ng-class="{active: showPanitia}"
+			                    style="background:#fff!important;">
+			              <span class="body-1-bold">Ketua Panitia</span>
+			              <i class="icon-normal" style="float:right;" ng-class="showPanitia ? 'ion-chevron-up' : 'ion-chevron-down'"></i>
+			            &nbsp;
+			          </div>
+			          <ion-item class="item-accordion" ng-show="showPanitia">
+			            <div class="row">
+			            	<div class="col">
+			            		<img ng-src="{{panitia.type+panitia.foto_user}}" class="center avatar-panitia">
+			            	</div>
+			            </div>
+			            <div class="row">
+			            	<div class="col">
+			            	<span class="body-1-bold">Nama panitia</span>
+			            	<p>{{panitia.nama_user}}</p>
+			            	</div>
+			            	<div class="col">
+			            	<span class="body-1-bold">Nim panitia</span>
+							<p>{{panitia.nim}}</p>
+			            	</div>
+			            </div>
+			            <div class="row">
+			            	<div class="col">
+			            	<span class="body-1-bold">Email</span>
+			            	<p>{{panitia.email_user}}</p>
+			            	</div>
+			            </div>
+			            <div class="row">
+			            	<div class="col">
+			            	<span class="body-1-bold">Handphone</span>
+			            	<p>{{panitia.no_handphone}}</p>
+			            	</div>
+			            </div>
+			          </ion-item>
+			        </div>
+			      	<div> <!-- detail !-->
+			          <div class="padding ink"
+			                    ng-click="toogleShow()"
+			                    ng-class="{active: showDes}"
+			                    style="background:#fff!important;"
+			                    >
+			              <span class="body-1-bold">Detail</span>
+			              <i class="icon-normal" style="float:right;" ng-class="showDes ? 'ion-chevron-up' : 'ion-chevron-down'"></i>
+			            &nbsp;
+			          </div>
+			          <ion-item class="item-accordion" ng-show="showDes">
+			            <div class="row">
+			            	<div class="col">
+			            	<span class="body-1-bold">Ukm</span>
+			            	<p>{{kegiatan.nama_ukm}}</p>
+			            	</div>
+			            	<div class="col">
+			            	<span class="body-1-bold">Tanggal Audiensi</span>
+							<p>{{kegiatan.tanggal_audiensi}}</p>
+			            	</div>
+			            </div>
+			            <div class="row">
+			            	<div class="col">
+			            	<span class="body-1-bold">Lokasi</span>
+			            	<p>{{kegiatan.lokasi_kegiatan}}</p>
+			            	</div>
+			            </div>
+			            <div class="row">
+			            	<div class="col">
+			            	<span class="body-1-bold">Deksripsi</span>
+			            	<p>{{kegiatan.deskripsi_kegiatan}}</p>
+			            	</div>
+			            </div>
+			          </ion-item>
+			        </div>
+
+			        <div> <!-- evaluasi !-->
+			          <div class="padding ink"
+			                    ng-click="getEvaluasi(kegiatan.id_kegiatan)"
+			                    ng-class="{active: showEval}"
+								style="background:#fff!important;"
+			                    >
+			              <span class="body-1-bold">Evaluasi</span>
+			              <i class="icon-normal" style="float:right;" ng-class="showEval ? 'ion-chevron-up' : 'ion-chevron-down'"></i>
+			            &nbsp;
+			          </div>
+			          <ion-item class="item-accordion" ng-show="showEval">
+			           <div ng-repeat="evaluasi in evaluasiList"><!-- repeat evaluasi !-->
+			           <div class="row">
+				           <div class="col">
+				           		<div><img ng-src="{{evaluasi.type_user+evaluasi.foto_user}}" class="avatar-evaluasi"></div>
+				           </div>
+				           <div class="col-80">
+				           		<div class="body-1-bold">{{evaluasi.nama_user}}</div>
+				           		<div class="body-1">{{evaluasi.evaluasi}}</div>
+				           		<div><img ng-src="{{evaluasi.type_evaluasi+evaluasi.foto_evaluasi}}" class="foto-evaluasi"></div>
+				           		<div class="caption">{{evaluasi.tanggal_evaluasi}}</div>
+				           </div>
+			           </div>
+			           <div class="divider"></div>
+			           </div>
+			          </ion-item>
+			          <div class="center" ng-show="!evaluasiList" style="text-align:center;"><ion-spinner></ion-spinner></div>
+			        </div>
+		      	</ion-list>
+
+		</div>
+	</ion-content>
+</ion-view>

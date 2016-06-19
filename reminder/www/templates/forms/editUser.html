@@ -1,0 +1,51 @@
+<ion-view view-title="Edit User">
+	<ion-header-bar align-title="left" class="bar bar-balanced bg-biru">
+      <button class="button button-icon button-clear ion-android-arrow-back" ng-click="goBack()">
+      </button>
+	  <h1 class="title">Edit User</h1>
+	</ion-header-bar>
+	<ion-content padding="true">
+	<form name="editForm" ng-submit="edit()">
+	<label class="item item-input item-floating-label" style="color:rgb(33,150,243);border:none;padding:0;border-bottom: 1px solid #2196f3!important;">
+   		<span class="input-label" style="color:#757575!important;">Email User</span>
+   		<input type="email" placeholder="Email User" name="email" ng-model="data.email" required>
+   	</label> 
+
+   	<label class="item item-input item-floating-label" style="color:rgb(33,150,243);border:none;padding:0;border-bottom: 1px solid #2196f3!important;">
+   		<span class="input-label" style="color:#757575!important;">Password</span>
+   		<input type="text" placeholder="Password" name="password" ng-model="data.password">
+   	</label> 
+
+   	<label class="item item-input item-floating-label" style="color:rgb(33,150,243);border:none;padding:0;border-bottom: 1px solid #2196f3!important;">
+   		<span class="input-label" style="color:#757575!important;">Nama</span>
+   		<input type="text" placeholder="Nama" name="nama" ng-model="data.nama" required>
+   	</label>
+
+   	<label class="item item-input item-floating-label" style="color:rgb(33,150,243);border:none;padding:0;border-bottom: 1px solid #2196f3!important;">
+   		<span class="input-label" style="color:#757575!important;">Handphone</span>
+   		<input type="text" placeholder="Handphone" name="handphone" ng-model="data.handphone" valid-number>
+   	</label>  
+
+	<div class="select-modal" >
+	<div class="button button-clear button-stable " modal-select ng-model="data.kategori" options="akses" modal-title="Pilih Kategori" hide-reset="true" >
+		<span>Kategori</span>
+		<i class="icon ion-arrow-down-b" style="float:right; padding-right:8px;"></i>
+	    <div class="option">
+	        {{option.akses}}
+	    </div>
+	</div>
+	<div class="isi">{{data.kategori.akses}}</div>
+	</div>
+	
+	<div style="padding:16px 0px 0px 0px;">
+		<a class="button button-clear button-positive" ng-click="cameraPicture()"><i class="ion ion-android-camera icon"></i></a>
+		<a class="button button-clear button-positive" ng-click="addPicture()">Album</a>
+		<span class="caption" ng-show="filename">{{filename}}</span>
+	</div>  	
+	
+	 <div class="right" style="background:#fff!important; padding:16px;">
+        <a class="button button-raised button-raised-biru" data-ink-color="#43A047" data-ink-opacity=".35" ng-click="edit()" ng-disabled="editForm.$invalid">Edit</a>
+	</div>
+	</form>
+	</ion-content>
+</ion-view>

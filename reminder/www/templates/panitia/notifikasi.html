@@ -1,0 +1,31 @@
+<ion-view view-title="Notifikasi">
+        <ion-content>
+        	<div class="center" ng-show="!notifikasiList" style="text-align:center;"><ion-spinner></ion-spinner></div>
+            <div class="list">
+            	<div ng-repeat="notifikasi in notifikasiList" ng-controller="notifikasiCtrl" ng-show="notifikasiList" ng-click="viewKegiatan(notifikasi)">
+	                <div class="item item-text-wrap row item-notif ink" ng-class="notifikasi.status_dibaca === '0' ? '':'bg-abu'">
+	                	<span class="col-10 item-icon-left" ng-class="notifikasi.status_dibaca === '0' ? 'text-positive':''"><i class="icon "
+	                	ng-class="notifikasi.tipe === '0' ? 'ion-android-apps':'ion-android-alarm-clock' "
+	                	></i> </span>
+	                    <span class="body-1 col">{{notifikasi.notifikasi}}</span>
+	                    <span class="caption col-20">
+	                        {{notifikasi.waktu}}
+	                    </span>
+	                </div>
+	                <div class="divider"></div>
+                </div>
+                <!--
+                <div>
+	                <div class="item item-text-wrap row item-notif ink">
+	                	<span class="col-10 item-icon-left"><i class="icon ion-android-alarm-clock"></i></span>
+	                    <span class="body-1 col-55">Kegiatan baru Bazzar 3 oleh Himaprodi SK</span>
+	                    <span class="caption col-35">
+	                        12 november 2014
+	                    </span>
+	                </div>
+	                <div class="divider"></div>
+                </div>
+                !-->
+            </div>
+        </ion-content>
+</ion-view>

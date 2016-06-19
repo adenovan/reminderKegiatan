@@ -1,0 +1,42 @@
+<ion-view view-title="Pengaturan">
+        <ion-content class="padding">
+        <div class="card item-text-wrap padding"> <!-- repeat !-->
+	        	  <div style="padding:16px 0px 16px 0px;">
+	        	 		<span class="sub-headline">Pengaturan Account</span>
+				      </div>
+				 <div class="divider"></div>
+         <form name="editForm">
+              <label class="item item-input item-floating-label" style="color:rgb(33,150,243);border:none;padding:0;border-bottom: 1px solid #2196f3!important;">
+                <span class="input-label" style="color:#757575!important;">Email User</span>
+                <input type="email" placeholder="Email User" name="email" ng-model="data.email" required>
+              </label> 
+
+              <label class="item item-input item-floating-label" style="color:rgb(33,150,243);border:none;padding:0;border-bottom: 1px solid #2196f3!important;">
+                <span class="input-label" style="color:#757575!important;">Password</span>
+                <input type="text" placeholder="Password" name="password" ng-model="data.password">
+              </label> 
+
+              <label class="item item-input item-floating-label" style="color:rgb(33,150,243);border:none;padding:0;border-bottom: 1px solid #2196f3!important;">
+                <span class="input-label" style="color:#757575!important;">Nama</span>
+                <input type="text" placeholder="Nama" name="nama" ng-model="data.nama" required>
+              </label>
+
+              <label class="item item-input item-floating-label" style="color:rgb(33,150,243);border:none;padding:0;border-bottom: 1px solid #2196f3!important;">
+                <span class="input-label" style="color:#757575!important;">Handphone</span>
+                <input type="text" placeholder="Handphone" name="handphone" ng-model="data.handphone" valid-number>
+              </label>     
+
+              <div style="padding:16px 0px 0px 0px;">
+                <a class="button button-clear button-positive" ng-click="cameraPicture()"><i class="ion ion-android-camera icon"></i></a>
+                <a class="button button-clear button-positive" ng-click="addPicture()">Album</a>
+                <span class="caption" ng-show="filename">{{filename}}</span>
+              </div>  	
+
+		         <div class="right" style="background:#fff!important; padding:16px;">
+				  	  <div ng-show="loading" style="float:left;padding-top:8px;padding-right:10px;"><ion-spinner icon="android" class="spinner-positive"></ion-spinner></div>
+                      <a class="button button-raised button-raised-biru" data-ink-color="#2196f3" data-ink-opacity=".35" ng-click="edit()" ng-disabled="editForm.$invalid">SUNTING</a>
+			 	     </div>
+             </form>
+	        	</div>
+        </ion-content>
+ </ion-view>
