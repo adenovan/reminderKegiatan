@@ -1,0 +1,127 @@
+<div id="main" layout="column" tabindex="-1" layout-fill role="main" ng-controller="refrensiKegiatanCtrl" class="gray">
+
+	  <!--Toolbar !-->
+	  <md-toolbar class="md-whiteframe-z1">
+      <div class="md-toolbar-tools" layout="row">
+        <md-button class="md-icon-button" ng-click="back('/super/notifikasi')" aria-label="Back">
+            <ng-md-icon icon="arrow_back"></ng-md-icon>
+        </md-button>
+        <h1 class="md-title" flex>
+          Informasi Notifikasi
+        </h1>
+      </div>
+    </md-toolbar>
+
+      <!--Content !-->
+    <md-content  id="main-content" md-scroll-y class="gray" style="margin-top:0px;margin-bottom:0px;" layout-padding >
+     <md-card ng-controller="kegiatanCtrl" ng-init="showDes = true" flex>
+        <md-card-content layout="column" layout-sm="column" ng-show="kegiatan">
+          <div layout="row">
+          <md-card-header-text layout="column" flex>
+            <span class="md-headline">{{kegiatan.nama_kegiatan}}</span>
+            <span class="md-body-1" layout="row">
+            <div><ng-md-icon icon="event" size="24" style="fill:#9E9E9E;"></ng-md-icon></div>
+            <div style="padding:2px;color:#9E9E9E;">{{kegiatan.tanggal_kegiatan}}</div>
+            </span>
+          </md-card-header-text>
+          <md-card-avatar>
+            <img class="md-user-avatar image-ukm" ng-src="{{kegiatan.type}}{{kegiatan.logo_ukm}}" class="image-ukm">
+          </md-card-avatar>
+          </div>
+        </md-card-content>
+        <md-divider></md-divider>
+        <div ng-controller="infoPanitiaCtrl">
+        <md-button class="md-primary" ng-show="kegiatan.id_refrensi > 0" ng-click="navigateTo(kegiatan.id_refrensi)">
+          <ng-md-icon icon="star"></ng-md-icon>
+          <span hide-xs>Refrensi</span>
+        </md-button>
+        <md-list-item layout="row" ng-click="getpanitia(kegiatan.id_panitia)">
+            <span md-ink-ripple flex class="bold md-body-1">Ketua Panitia</span>
+            <ng-md-icon icon="{{showPanitiaicon}}" size="24"></ng-md-icon>
+        </md-list-item>
+        <div layout="row" ng-show="loading" layout-padding style="padding-bottom:0px;padding-top:2px;">
+          <md-progress-linear md-mode="indeterminate" class="md-accent"></md-progress-linear>
+        </div>
+        <div layout="column" layout-gt-sm="row" layout-padding ng-show="showPanitia" class="inset" >
+          <div flex="nogrow" layout-align="center center" layout="row">
+            <img ng-src="{{panitia.type}}{{panitia.foto_user}}" class="foto-user">
+          </div>
+          <div layout="row" layout-padding layout-xs="row" flex>
+            <div layout="column" flex>
+              <div class="bold md-body-1">Nama</div>
+              <div class="padding-top md-body-1">{{panitia.nama_user}}</div>
+            </div>
+            <div layout="column" flex>
+              <div class="bold md-body-1">Nim</div>
+              <div class="padding-top md-body-1">{{panitia.nim}}</div>
+            </div>
+          </div>
+          <div layout="row" layout-xs="column" layout-padding flex>
+            <div flex>
+              <div class="bold md-body-1 md-content">Email</div>
+              <div class="padding-top md-body-1">{{panitia.email_user}}</div>
+            </div>
+            <div flex>
+              <div class="bold md-body-1">No Handphone</div>  
+              <div class="padding-top md-body-1">{{panitia.no_handphone}}</div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <md-list-item layout="row" ng-click="showDes = !showDes" >
+            <span md-ink-ripple flex class="bold md-body-1">Detail</span>
+            <ng-md-icon icon="{{showDesicon}}" size="24"></ng-md-icon>
+        </md-list-item>
+        <div layout="column" ng-show="showDes" >
+          <div layout="column" layout-gt-md="row" layout-md="row" >
+            <div layout="row" layout-padding flex>
+              <div flex>
+                <div class="bold md-body-1">Ukm</div>
+                <div class="padding-top md-body-1">{{kegiatan.nama_ukm}}</div>
+              </div>
+              <div flex>
+                <div class="bold md-body-1">Tanggal Audiensi</div>  
+                <div class="padding-top md-body-1">{{kegiatan.tanggal_audiensi}}</div>
+              </div>
+            </div>
+            <div layout-margin flex>
+              <div class="bold md-body-1">Lokasi</div>
+              <div class="md-body-1" ng-bind-html="kegiatan.lokasi_kegiatan | unsafe"></div>
+            </div>
+            <div layout-margin flex>
+              <div class="bold md-body-1">Deskripsi</div>
+              <div class="md-body-1" ng-bind-html="kegiatan.deskripsi_kegiatan | unsafe"></div>
+            </div>
+          </div>
+        </div>
+
+        <div ng-controller="refInfoEvaluasiCtrl">
+        <md-list-item layout="row" ng-click="evalToggle()">
+          <span md-ink-ripple flex class="bold md-body-2">Evaluasi</span>
+          <ng-md-icon icon="{{showEvalicon}}" size="24"></ng-md-icon>
+        </md-list-item>
+        <div layout="row" ng-show="!evaluasiList" layout-padding style="padding-bottom:0px;padding-top:2px;">
+          <md-progress-linear md-mode="indeterminate" class="md-accent"></md-progress-linear>
+        </div>
+        <div ng-show="showEval" layout-padding>
+        <div layout="row" class="md-caption" ng-show="evaluasiList.length == 0">Tidak ada Evaluasi</div>
+        <div ng-repeat="evaluasi in evaluasiList">
+        <div layout="row">
+          <div flex="nogrow"><img ng-src="{{evaluasi.type_user}}{{evaluasi.foto_user}}" class="foto-evaluasi"></div>
+          <div layout="column" flex> 
+          <span class="padding-left md-body-1 bold">{{evaluasi.nama_user}}</span>
+          <span class="padding md-body-1" ng-show="evaluasi.evaluasi">{{evaluasi.evaluasi}}</span>
+          <span class="padding-left" ng-show="evaluasi.foto_evaluasi">
+          <img md-whiteframe="1" ng-src="{{evaluasi.type_evaluasi}}{{evaluasi.foto_evaluasi}}" flex-gt-md="40" flex-gt-sm="55" flex-xs="95">
+          </span>
+          <span class="padding md-body-1" style="color:#9E9E9E;" flex>{{evaluasi.tanggal_evaluasi}}</span>
+          </div>
+        </div>
+        <md-divider></md-divider>
+        </div>
+        </div><!-- show evaluasi !-->
+        </div><!-- Info Evaluasi !-->
+        </md-card>
+    </md-content>
+</div>

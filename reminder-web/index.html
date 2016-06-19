@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id" ng-app="reminderApp">
+<head>
+	<title>PK III Reminder System</title>
+	<link rel="stylesheet" href="libs/bower_components/angular-material/angular-material.min.css">
+	<link rel="stylesheet" href="libs/bower_components/angular-material-icons/angular-material-icons.css">
+	<link rel="stylesheet" href="css/reminder.css">
+	<link rel="shortcut icon" type="image/png" href="image/asset/ic_header.png"/>
+	<link rel="shortcut icon" type="image/png" href="image/asset/ic_header.png"/>
+	<script src="libs/bower_components/angular/angular.js"></script>
+	<script src="libs/bower_components/angular-animate/angular-animate.min.js"></script>
+	<script src="libs/bower_components/angular-aria/angular-aria.min.js"></script>
+	<script src="libs/bower_components/angular-material/angular-material.min.js"></script>
+	<script src="libs/bower_components/angular-messages/angular-messages.min.js"></script>
+	<script src="libs/bower_components/angular-route/angular-route.min.js"></script>
+	<script src="libs/bower_components/angular-cookies/angular-cookies.min.js"></script>
+	<script src="libs/bower_components/angular-material-icons/angular-material-icons.min.js"></script> 
+	<script src="libs/bower_components/ng-file-upload/ng-file-upload.min.js"></script>
+	<script src="libs/bower_components/moment/min/moment.min.js"></script>
+	<script src="libs/bower_components/angular-sanitize/angular-sanitize.min.js"></script>  
+	<script src="libs/bower_components/material-calendar/dist/angular-material-calendar.js"></script>  
+	<script src="controller/reminder.js"></script>
+	<script src="controller/reminder-services.js"></script>
+	<script src="controller/reminder-controller.js"></script>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name=apple-mobile-web-app-capable content=yes>
+	<meta name=apple-mobile-web-app-status-bar-style content=black>
+</head>
+<body layout="row" ng-cloak ng-controller="mainCtrl">
+<div ng-if="sidenav.super" ng-show="sidenav.super" ng-include="'view/super/sidenav.view.html'" ng-controller="superCtrl" layout="column"></div>
+<div ng-if="sidenav.admin" ng-show="sidenav.admin" ng-include="'view/admin/sidenav.view.html'" ng-controller="adminCtrl" layout="column"></div>
+<div ng-if="sidenav.senat" ng-show="sidenav.senat" ng-include="'view/senat/sidenav.view.html'" ng-controller="senatCtrl" layout="column"></div>
+<div ng-if="sidenav.balma" ng-show="sidenav.balma" ng-include="'view/balma/sidenav.view.html'" ng-controller="balmaCtrl" layout="column"></div>
+<div ng-if="sidenav.panitia" ng-show="sidenav.panitia" ng-include="'view/panitia/sidenav.view.html'" ng-controller="panitiaCtrl" layout="column"></div>
+<ng-view layout-fill>
+</ng-view>
+</body>
+</html>

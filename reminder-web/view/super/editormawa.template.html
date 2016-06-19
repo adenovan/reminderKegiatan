@@ -1,0 +1,50 @@
+<md-dialog aria-label="Edit Ormawa" flex="25" ng-cloak layout-wrap>
+  <form name="addForm" novalidate layout-fill>
+    <md-toolbar class="md-primary md-hue-2">
+      <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" ng-click="cancel()" hide-gt-sm aria-label="Back">
+            <ng-md-icon icon="arrow_back"></ng-md-icon>
+        </md-button>
+        <h2>Edit Organisasi Mahasiswa</h2>
+        <span flex></span>
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+      <div class="md-dialog-content" layout="column">
+          <div layout="row" flex>
+            <md-input-container class="md-block no-margin" flex>
+              <label>Nama Organisasi Mahasiswa</label>
+              <input name="Nama" ng-model="dataUkm.nama">
+            </md-input-container>
+            <div>
+            <md-button class="md-primary" style="margin:0px;" ngf-select ng-model="file" name="foto_user" ngf-pattern="'image/*'" ngf-accept="'image/*'" 
+            ngf-resize="{width: 256, height: 256,quality: 1.0}"
+            >
+                <label for="logo_ukm">
+                <div>
+                <ng-md-icon icon="camera_alt" style="fill:#2196F3"></ng-md-icon>
+                <span>Foto</span>
+                </div>
+                </label> 
+            </md-button>
+            </div>
+          </div>
+
+          <div layout="row" class="md-body-1" ng-show="file.name">
+            Foto : {{file.name}} 
+          </div>
+
+      </div>    
+    <!-- ACTION !-->
+    <div layout="row">
+      <span flex></span>
+      <md-button class="md-raised" ng-click="cancel()">
+       Batal
+      </md-button>
+      <md-button class="md-primary md-hue-2 md-raised" ng-click="answer()" style="margin-right:20px;" ng-disabled="addForm.$invalid">
+       Sunting
+      </md-button>
+    </div>
+    </md-dialog-content>
+  </form>
+</md-dialog>

@@ -1,0 +1,47 @@
+    <md-sidenav layout="column" class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" flex>
+      <md-toolbar class="md-tall md-hue-2" ng-show="user">
+       <span flex></span>
+        <div layout="column" class="md-toolbar-tools-bottom inset">
+          <div>
+          <img flex="nogrow" ng-src="{{user.type + user.foto_user}}" class="sidenav-foto">
+          </div>
+          <div class="md-subhead">{{user.nama_user}}</div>
+          <div class="md-subhead">{{user.email_user}}</div>
+          </div>
+      </md-toolbar>
+      <md-subheader>Kelola</md-subheader>
+      <md-list class="no-padding">
+
+      <md-list-item md-ink-ripple layout="row" ng-click="navigateTo(menu[0].link)" style="background:{{menu[0].backgrounds}};">
+        <div>
+        <ng-md-icon icon="{{menu[0].icon}}" style="fill: {{menu[0].fill}};" size="24"></ng-md-icon>
+        <span class="inset md-body-1" style="color:{{menu[0].fill}};">{{menu[0].title}}</span>
+        </div>
+      </md-list-item>
+      
+      <md-list-item md-ink-ripple layout="row" ng-click="navigateTo(menu[1].link)" style="background:{{menu[1].backgrounds}};">
+        <div>
+        <ng-md-icon icon="{{menu[1].icon}}" style="fill: {{menu[1].fill}};" size="24"></ng-md-icon>
+        <span class="inset md-body-1" style="color:{{menu[1].fill}};">{{menu[1].title}} <span class="md-body-1 label-red" ng-show="$parent.dataNotif > 0">{{$parent.dataNotif}}</span></span>
+        </div>
+      </md-list-item>
+
+      </md-list>
+       <md-divider></md-divider>
+      <md-subheader>Pribadi</md-subheader>
+      <md-list class="no-padding">
+        <md-list-item md-ink-ripple layout="row" ng-click="navigateTo('/balma/setting')" style="color:{{fill.setting}};background:{{backgrounds.setting}};">
+        <div>
+          <ng-md-icon icon="settings" style="fill: {{fill.setting}};" size="24"></ng-md-icon>
+          <span class="inset md-body-1" >Pengaturan</span>
+        </div>
+        </md-list-item>
+        <md-list-item md-ink-ripple layout="row" ng-click="logout()">
+        <div>
+          <ng-md-icon icon="logout" style="fill: #757575;" size="24"></ng-md-icon>
+          <span class="inset md-body-1" >Logout</span>
+        </div>
+        </md-list-item>
+        <div flex></div>
+      </md-list>
+    </md-sidenav>

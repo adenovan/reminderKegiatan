@@ -1,0 +1,33 @@
+<div id="main" layout="column" tabindex="-1" layout-fill role="main" ng-controller="notifikasiListCtrl">
+
+	<!--Toolbar !-->
+	<md-toolbar class="md-whiteframe-z1 site-content-toolbar">
+      <div class="md-toolbar-tools" layout="row">
+        <md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
+          <ng-md-icon icon="menu"></ng-md-icon>
+        </md-button>
+        <h1 class="md-title" flex>
+          Notifikasi
+        </h1>
+      </div>
+  </md-toolbar>
+
+    <!--Content !-->
+    <md-content  id="main-content" md-scroll-y class="white" style="margin-top:0px;margin-bottom:0px;">
+    <div layout="row" layout-align="space-around" ng-show="!notifikasiList">
+        <md-progress-circular md-mode="indeterminate" md-diameter="96"></md-progress-circular>
+    </div>
+      <div ng-repeat="notifikasi in notifikasiList" ng-controller="notifikasiCtrl" ng-click="viewKegiatan(notifikasi.id_kegiatan,notifikasi.id_notif)" class="no-highlight">
+      <md-list-item layout="row" md-ink-ripple class="{{backgrounds}} padding-left padding-right" layout-align-xs="start start">
+        <div flex="nogrow" class="inset" >
+          <ng-md-icon icon="{{icons}}" size="24"
+          style="fill:{{fills}}"></ng-md-icon>
+        </div>
+        <span flex="60" class="md-body-1 inset">{{notifikasi.notifikasi}}</span>
+        <img ng-src="{{notifikasi.type + notifikasi.foto_user}}" class="image-notif margin" flex="nogrow" hide-xs>
+        <span flex="20" class="md-caption inset">{{notifikasi.waktu}}</span>
+      </md-list-item>
+      <md-divider></md-divider>
+      </div>
+    </md-content>
+</div>

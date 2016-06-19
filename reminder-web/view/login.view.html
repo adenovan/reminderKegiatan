@@ -1,0 +1,41 @@
+<div layout-fill class="bg-gmbr">
+<div layout="row" layout-align="center center" style="height:600px!important" flex>
+	<div flex-gt-md="50" flex-gt-sm="60" flex-gt-xs="80" flex-xs="80">
+	<img src="image/asset/no-logo.png" flex="100">
+	<md-toolbar class="md-primary">
+	<div class="md-toolbar-tools">
+	 	<h2>Form Login</h2>
+	</div>
+ 	</md-toolbar>
+	 <md-card layout-fill>
+	 <md-card-content>
+	  <form name="loginForm" ng-submit="login(user)">
+	    <md-input-container class="md-block">
+	      <!-- Use floating placeholder instead of label -->
+	      <md-icon> <ng-md-icon icon="email" style="fill:#2196F3" ></ng-md-icon></md-icon>
+	      <input name="email" ng-model="user.email" type="email" placeholder="Email" required>
+	      <div ng-messages="loginForm.email.$error" ng-if="loginForm.email.$touched">
+          	<div ng-message="required">Email yang dimasukan tidak valid.</div>
+    	  </div>
+	    </md-input-container>
+	    
+	    <md-input-container class="md-block">
+	      <!-- Use floating placeholder instead of label -->
+	      <md-icon>
+	      <ng-md-icon icon="vpn_key" style="fill: #2196F3;" size="24" ></ng-md-icon>
+	      </md-icon>
+	      <input name="password" ng-model="user.password" type="password" placeholder="Password" ng-required="true">
+	    </md-input-container>
+	    <div layout="row">
+	   	<p class="{{errorClass}}" ng-show="loginForm.$submitted">
+  			{{serverError}}
+	 	</p>
+	    <span flex></span>
+	    <md-button class="md-raised md-primary" type='submit'>Login</md-button>
+	    </div>
+	  </form>
+	  </md-card-content>
+	  </md-card>
+	  </div>
+</div>
+</div>

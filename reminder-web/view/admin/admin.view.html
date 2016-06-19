@@ -1,0 +1,179 @@
+<div id="main" layout="column" tabindex="-1" layout-fill role="main" ng-controller="adminListCtrl">
+
+	<!--Toolbar !-->
+	<md-toolbar class="md-whiteframe-z1 site-content-toolbar" ng-show="!showSearch">
+      <div class="md-toolbar-tools" layout="row">
+        <md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
+          <ng-md-icon icon="menu"></ng-md-icon>
+        </md-button>
+        <h1 flex>
+          {{titles}} 
+        </h1>
+        <md-button class="md-icon-button" aria-label="Search" ng-click="showSearch = !showSearch">
+          <ng-md-icon icon="search"></ng-md-icon>
+        </md-button>
+
+        <md-menu md-position-mode="target-right target" >
+          <md-button class="md-icon-button" aria-label="Open Settings" ng-click="$mdOpenMenu($event)">
+            <ng-md-icon icon="more_vert"></ng-md-icon>
+          </md-button>
+          <md-menu-content width="4" >
+            <md-menu-item >
+              <md-button ng-click="orderBy('ID_User')">
+                  <div layout="row">
+                    <p flex class="md-caption">Default</p>
+                    <ng-md-icon icon="{{icon}}" ng-show="key === 'ID_User'"></ng-md-icon>  
+                  </div>
+              </md-button>
+            </md-menu-item>
+            <md-menu-item >
+              <md-button ng-click="orderBy('nama_user')">
+                  <div layout="row">
+                    <p flex class="md-caption">Nama</p>
+                    <ng-md-icon icon="{{icon}}" ng-show="key === 'nama_user'"></ng-md-icon>  
+                  </div>
+              </md-button>
+            </md-menu-item>
+            <md-menu-item >
+              <md-button ng-click="orderBy('email_user')">
+                  <div layout="row">
+                    <p flex class="md-caption">Email</p>
+                    <ng-md-icon icon="{{icon}}" ng-show="key === 'email_user'"></ng-md-icon>  
+                  </div>
+              </md-button>
+            </md-menu-item>
+          </md-menu-content>
+        </md-menu>
+      </div>
+      </md-toolbar>
+      <!--search Toolbar !-->
+      <md-toolbar class="md-whiteframe-z1 site-content-search" ng-show="showSearch">
+        <div class="md-toolbar-tools">
+          <md-button class="md-icon-button" ng-click="switchToolbar()" aria-label="Back">
+            <ng-md-icon icon="arrow_back" style="fill:#000000"></ng-md-icon>
+          </md-button>
+          <form layout="row" style="margin-top:24px;" novalidate name="formCari" ng-submit="cari()" flex>
+          <md-input-container md-no-float flex class="no-margin">
+          <input ng-model="textCari" placeholder="Cari {{titles}}" class="toolbar-input" required flex>
+          </md-input-container>
+          </form>
+          <md-button class="md-icon-button md-primary md-hue-3" aria-label="Search" ng-click="cari()" ng-disabled="formCari.$invalid">
+            <ng-md-icon icon="search" style="fill:#000000"></ng-md-icon>
+          </md-button>
+
+          <md-menu md-position-mode="target-right target" >
+          <md-button class="md-icon-button" aria-label="Open Settings" ng-click="$mdOpenMenu($event)">
+            <ng-md-icon icon="more_vert" style="fill:#000000"></ng-md-icon>
+          </md-button>
+          <md-menu-content width="4" >
+            <md-menu-item >
+              <md-button ng-click="orderBy('ID_User')">
+                  <div layout="row">
+                    <p flex class="md-caption">Default</p>
+                    <ng-md-icon icon="{{icon}}" ng-show="key === 'ID_User'"></ng-md-icon>  
+                  </div>
+              </md-button>
+            </md-menu-item>
+            <md-menu-item >
+              <md-button ng-click="orderBy('nama_user')">
+                  <div layout="row">
+                    <p flex class="md-caption">Nama</p>
+                    <ng-md-icon icon="{{icon}}" ng-show="key === 'nama_user'"></ng-md-icon>  
+                  </div>
+              </md-button>
+            </md-menu-item>
+            <md-menu-item >
+              <md-button ng-click="orderBy('email_user')">
+                  <div layout="row">
+                    <p flex class="md-caption">Email</p>
+                    <ng-md-icon icon="{{icon}}" ng-show="key === 'email_user'"></ng-md-icon>  
+                  </div>
+              </md-button>
+            </md-menu-item>
+          </md-menu-content>
+        </md-menu>
+        </div>
+      </md-toolbar>
+
+    <!--Content !-->
+    <md-content  id="main-content" flex md-scroll-y class="gray" style="margin-top:0px;margin-bottom:0px;">
+      <md-tabs md-dynamic-height md-border-bottom class="tabsdm" md-selected="selectedIndex">
+        <md-tab label="Senat" md-on-select="changeTitle('Senat')" class="gray">
+        <div layout="row" layout-align="space-around" ng-show="!senatList">
+          <md-progress-circular md-mode="indeterminate" md-diameter="96"></md-progress-circular>
+        </div>
+        <div class='md-padding gray' layout="row" layout-wrap>
+        <md-card flex-xs="100" flex-sm="45" flex-md="40" flex-lg="30" flex-xl="30" ng-repeat="admin in senatList">
+        <md-card-title layout-wrap>
+          <md-card-title-text>
+            <span class="md-subhead bold">{{admin.nama_user}}</span>
+            <span class="md-subhead">{{admin.email_user}}</span>
+            <span class="md-subhead">{{admin.no_handphone}}</span>
+          </md-card-title-text>
+          <md-card-title-media>
+            <div class="md-media-md card-media">
+              <img class="image-md" layout-margin ng-src="{{admin.type + admin.foto_user}}">
+            </div>
+          </md-card-title-media>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button class="md-primary" ng-click="editAdmin($event,admin.ID_User,$index)">Sunting</md-button>
+          <md-button class="md-primary" ng-click="deleteAdmin($event,admin.ID_User,'(Senat)',admin.nama_user,admin.hak_akses)">Hapus</md-button>
+        </md-card-actions>
+        </md-card>
+        </div>
+        <div layout="row" layout-align="center center" class="gray" flex ng-show="senatList.length > 10">
+        <md-button class="md-accent md-hue-2" ng-click="getMore(kegiatanList.length)">
+            <div layout-fill>
+            <ng-md-icon icon="refresh" style="fill:#43A047"></ng-md-icon>
+            <span>next</span>
+            </div>
+        </md-button>
+        </div>
+        </md-tab>
+
+        <md-tab label="Balma" md-on-select="changeTitle('Balma')" class="gray">
+        <div layout="row" layout-align="space-around" ng-show="!balmaList">
+          <md-progress-circular md-mode="indeterminate" md-diameter="96"></md-progress-circular>
+        </div>
+        <div class='md-padding gray' layout="row" layout-wrap>
+        <md-card flex-xs="100" flex-sm="45" flex-md="40" flex-lg="30" flex-xl="30" ng-repeat="admin in balmaList">
+        <md-card-title layout-wrap>
+          <md-card-title-text>
+            <span class="md-subhead bold">{{admin.nama_user}}</span>
+            <span class="md-subhead">{{admin.email_user}}</span>
+            <span class="md-subhead">{{admin.no_handphone}}</span>
+          </md-card-title-text>
+          <md-card-title-media>
+            <div class="md-media-md card-media">
+              <img class="image-md" layout-margin ng-src="{{admin.type + admin.foto_user}}">
+            </div>
+          </md-card-title-media>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button class="md-primary" ng-click="editAdmin($event,admin.ID_User,$index)">Sunting</md-button>
+          <md-button class="md-primary" ng-click="deleteAdmin($event,admin.ID_User,'(Balma)',admin.nama_user,admin.hak_akses)">Hapus</md-button>
+        </md-card-actions>
+        </md-card>
+        </div>
+        <div layout="row" layout-align="center center" class="gray" flex ng-show="balmaList.length > 10">
+        <md-button class="md-accent md-hue-2" ng-click="getMore(kegiatanList.length)">
+            <div layout-fill>
+            <ng-md-icon icon="refresh" style="fill:#43A047"></ng-md-icon>
+            <span>next</span>
+            </div>
+        </md-button>
+        </div>
+        </md-tab>
+      </md-tabs>
+    </md-content>
+
+    <!-- fab button -->
+    <md-button aria-label="Add" class="md-fab md-fab-bottom-right md-hue-2" 
+      ng-click="addAdmin($event)">
+        <md-tooltip hide show-gt-sm md-direction="left">
+          Tambah Admin
+        </md-tooltip>
+        <ng-md-icon icon="add"></ng-md-icon></md-button>
+    </md-button>
+</div>

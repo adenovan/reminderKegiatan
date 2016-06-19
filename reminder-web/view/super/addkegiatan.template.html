@@ -1,0 +1,122 @@
+<md-dialog aria-label="Add Kegiatan" flex="50" ng-cloak layout-wrap>
+  <form name="addkegiatanForm" novalidate layout-fill>
+    <md-toolbar class="md-accent md-hue-2">
+      <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" ng-click="cancel()" hide-gt-sm aria-label="Back">
+            <ng-md-icon icon="arrow_back"></ng-md-icon>
+        </md-button>
+        <h2>Tambah Kegiatan</h2>
+        <span flex></span>
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+      <div class="md-dialog-content" layout="column">
+          <div layout="row" flex>
+            <md-input-container flex>
+              <label>Panitia Kegiatan</label>
+              <md-select name="id_panitia" ng-model="dataKegiatan.id_panitia" required>
+              <md-option ng-repeat="data in panitia" value="{{data.id_user}}">
+                {{data.nama_user}}
+              </md-option>
+             </md-select>
+            </md-input-container>
+            <md-input-container flex>
+              <label>Ukm</label>
+              <md-select name="id_ukm" ng-model="dataKegiatan.id_ukm" required>
+              <md-option ng-repeat="data in ukm" value="{{data.id_ukm}}">
+                {{data.nama_ukm }}
+              </md-option>
+             </md-select>
+            </md-input-container>
+          </div>
+
+          <div layout="row" flex>
+            <md-input-container flex>
+              <label>Refrensi Kegiatan</label>
+              <md-select name="id_refrensi" ng-model="dataKegiatan.id_refrensi">
+              <md-option value="0">
+               -- Kosongkan --
+              </md-option>
+              <md-option ng-repeat="data in refrensi" value="{{data.id_kegiatan}}">
+                {{data.nama_kegiatan}}
+              </md-option>
+             </md-select>
+            </md-input-container>
+          </div>
+
+          <div layout="row" flex>
+          <md-input-container class="md-block no-margin" flex>
+            <label>Nama Kegiatan</label>
+            <input name="nama_kegiatan" ng-model="dataKegiatan.nama_kegiatan" required>
+          </md-input-container>
+          <md-input-container class="md-block no-margin" flex>
+            <label>Lokasi Kegiatan</label>
+            <input name="lokasi_kegiatan" ng-model="dataKegiatan.lokasi_kegiatan" required>
+          </md-input-container>
+          </div>
+
+          <div layout="row">
+            <md-input-container class="md-block no-margin" flex>
+            <label>Deskripsi Kegiatan</label>
+            <textarea name="deskripsi_kegiatan" ng-model="dataKegiatan.deskripsi_kegiatan" required> </textarea>
+            </md-input-container>
+          </div>
+
+          <div layout="row" flex>
+            <div layout="column">
+            <label class="md-caption">Tanggal Kegiatan</label>
+            <md-datepicker ng-model="Tanggalkegiatan" md-placeholder="Pilih Tanggal"></md-datepicker required>
+            </div>
+            <md-input-container flex>
+              <label>Jam</label>
+              <md-select ng-model="Jamkegiatan" required>
+              <md-option ng-repeat="j in jam" value="{{j.value}}">
+                {{j.value}}
+              </md-option>
+             </md-select>
+            </md-input-container>
+            <md-input-container flex>
+              <label>Menit</label>
+              <md-select ng-model="Menitkegiatan" required>
+              <md-option ng-repeat="m in menit" value="{{m.value}}">
+                {{m.value}}
+              </md-option>
+             </md-select>
+            </md-input-container>
+          </div>
+          <div layout="row" flex>
+            <div layout="column">
+            <label class="md-caption">Tanggal Audiensi</label>
+            <md-datepicker ng-model="Tanggalaudiensi" md-placeholder="Pilih Tanggal"></md-datepicker required>
+            </div>
+            <md-input-container flex>
+              <label>Jam</label>
+              <md-select ng-model="Jamaudiensi" required>
+              <md-option ng-repeat="j in jam" value="{{j.value}}">
+                {{j.value}}
+              </md-option>
+             </md-select>
+            </md-input-container>
+            <md-input-container flex>
+              <label>Menit</label>
+              <md-select ng-model="Menitaudiensi" required>
+               <md-option ng-repeat="m in menit" value="{{m.value}}">
+                {{m.value}}
+              </md-option>
+             </md-select>
+            </md-input-container>
+          </div>
+      </div>    
+    <!-- ACTION !-->
+    <div layout="row">
+      <span flex></span>
+      <md-button class="md-raised" ng-click="cancel()">
+       Batal
+      </md-button>
+      <md-button class="md-accent md-hue-2 md-raised" ng-click="answer()" style="margin-right:20px;" ng-disabled="addkegiatanForm.$invalid">
+       Tambah
+      </md-button>
+    </div>
+    </md-dialog-content>
+  </form>
+</md-dialog>

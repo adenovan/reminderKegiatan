@@ -1,0 +1,1076 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"id",
+				"id_panitia"
+			],
+			[
+				"nama",
+				"nama_kegiatan"
+			],
+			[
+				"keg",
+				"kegiatanService"
+			],
+			[
+				"GetAll",
+				"GetAllOffsetKegiatanPanitia"
+			],
+			[
+				"kegi",
+				"kegiatanPanitia"
+			],
+			[
+				"ha",
+				"hak_akses"
+			],
+			[
+				"$rout",
+				"$routeParams	AngularJS"
+			],
+			[
+				"$ro",
+				"$routeParams	AngularJS(DI)"
+			],
+			[
+				"akses",
+				"aksesCheck"
+			],
+			[
+				"check",
+				"checkSenat"
+			],
+			[
+				"chec",
+				"checkSenat"
+			],
+			[
+				"ref",
+				"refreshBox"
+			],
+			[
+				"erro",
+				"error422"
+			],
+			[
+				"$co",
+				"$cookies	AngularJS"
+			],
+			[
+				"inde",
+				"indexBalma"
+			],
+			[
+				"selec",
+				"selectedIndex"
+			],
+			[
+				"$loca",
+				"$location	AngularJS"
+			],
+			[
+				"error",
+				"error404"
+			],
+			[
+				"or",
+				"orderby"
+			],
+			[
+				"ukm",
+				"ukmList"
+			],
+			[
+				"ukM",
+				"ukmList"
+			],
+			[
+				"se",
+				"search"
+			],
+			[
+				"te",
+				"textCari"
+			],
+			[
+				"Car",
+				"CariTidakAktif"
+			],
+			[
+				"cariA",
+				"CariAktif"
+			],
+			[
+				"lis",
+				"listPencarian"
+			],
+			[
+				"hak",
+				"hak_akses"
+			],
+			[
+				"pa",
+				"panitiaTidakAktif"
+			],
+			[
+				"p",
+				"panitiaAktif"
+			],
+			[
+				"Cari",
+				"cariBalma"
+			],
+			[
+				"fill",
+				"fillAdminList"
+			],
+			[
+				"admi",
+				"adminList"
+			],
+			[
+				"sw",
+				"switchToolbar"
+			],
+			[
+				"foto",
+				"foto_user"
+			],
+			[
+				"lit",
+				"listPencarian"
+			],
+			[
+				"sele",
+				"selectedIndex"
+			],
+			[
+				"nav",
+				"navigateTo"
+			],
+			[
+				"refre",
+				"refrensiKegiatan"
+			],
+			[
+				"$lo",
+				"$location	AngularJS"
+			],
+			[
+				"get",
+				"getBox"
+			],
+			[
+				"va",
+				"var_dump()	standard Function"
+			],
+			[
+				"str",
+				"strtotime()	date Function"
+			],
+			[
+				"strto",
+				"strtolower()	standard Function"
+			],
+			[
+				"ng",
+				"ng-disabled	AngularJS"
+			],
+			[
+				"ke",
+				"kegiatanList"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS"
+			],
+			[
+				"ng-s",
+				"ng-show	AngularJS"
+			],
+			[
+				"data",
+				"dataUkm"
+			],
+			[
+				"$md",
+				"$mdDialog"
+			],
+			[
+				"_F",
+				"_FILES"
+			],
+			[
+				"for",
+				"formdata"
+			],
+			[
+				"h",
+				"handphone"
+			],
+			[
+				"no",
+				"no_handphone"
+			],
+			[
+				"$s",
+				"$scope	AngularJS"
+			],
+			[
+				"Get",
+				"GetEditForm"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"pani",
+				"panitiaService"
+			],
+			[
+				"showS",
+				"showSimpleToast"
+			],
+			[
+				"s",
+				"success"
+			],
+			[
+				"f",
+				"function"
+			],
+			[
+				"err",
+				"error422"
+			],
+			[
+				"han",
+				"handphone"
+			],
+			[
+				"user",
+				"userService"
+			],
+			[
+				"bal",
+				"balmaList"
+			],
+			[
+				"senat",
+				"senatList"
+			],
+			[
+				"c",
+				"config	AngularJS"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"$l",
+				"$log	AngularJS"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"da",
+				"dataAdmin"
+			],
+			[
+				"u",
+				"updateInterface"
+			],
+			[
+				"new",
+				"newValue"
+			],
+			[
+				"arr",
+				"arrow_drop_down"
+			],
+			[
+				"ta",
+				"tanggal_kegiatan"
+			],
+			[
+				"tota",
+				"total_kegiatan"
+			],
+			[
+				"poll",
+				"pollKegiatan"
+			],
+			[
+				"nt",
+				"notif_count"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"$inte",
+				"$interval	AngularJS"
+			],
+			[
+				"$in",
+				"$interval	AngularJS(DI)"
+			],
+			[
+				"po",
+				"pollerNotifikasi"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"$c",
+				"$cookies	AngularJS"
+			],
+			[
+				"noti",
+				"notifikasi"
+			],
+			[
+				"n",
+				"notifikasiService"
+			],
+			[
+				"$",
+				"$cookies	AngularJS"
+			],
+			[
+				"show",
+				"showSimpleToast"
+			],
+			[
+				"ev",
+				"evaluasiService"
+			],
+			[
+				"fc",
+				"function"
+			],
+			[
+				"kegiata",
+				"kegiatanService"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"not",
+				"notifikasiList"
+			],
+			[
+				"id_",
+				"id_notif"
+			],
+			[
+				"las",
+				"lastInsert"
+			],
+			[
+				"errro",
+				"error404"
+			],
+			[
+				"loa",
+				"lokasi_kegiatan"
+			],
+			[
+				"jam",
+				"jamkegiatan"
+			],
+			[
+				"na",
+				"nama_ukm"
+			],
+			[
+				"li",
+				"listUser"
+			],
+			[
+				"tanggal",
+				"tanggal_kegiatan"
+			],
+			[
+				"ar",
+				"arrayPost"
+			],
+			[
+				"nama_",
+				"nama_kegiatan"
+			],
+			[
+				"i",
+				"insert"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"tolo",
+				"strtolower()	standard Function"
+			],
+			[
+				"ex",
+				"explode()	standard Function"
+			],
+			[
+				"fillPa",
+				"fillPanitiaTidakAktif"
+			],
+			[
+				"pan",
+				"panitiaService"
+			],
+			[
+				"fil",
+				"fillPanitiaAktif"
+			],
+			[
+				"handle",
+				"handleError"
+			],
+			[
+				"hand",
+				"handleError"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"md-",
+				"md-button"
+			],
+			[
+				"password",
+				"password_user"
+			],
+			[
+				"array_ke",
+				"array_key_exists()	standard Function"
+			],
+			[
+				"adm",
+				"adminList"
+			],
+			[
+				"log",
+				"logout"
+			],
+			[
+				"fa",
+				"false"
+			],
+			[
+				"toggle",
+				"toggleSidenav"
+			],
+			[
+				"to",
+				"toggleSidenav"
+			],
+			[
+				"men",
+				"menuHighlight"
+			],
+			[
+				"$w",
+				"$watch"
+			],
+			[
+				"H",
+				"H"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/skripsi/ionic/reminder/www/js/services.js",
+			"settings":
+			{
+				"buffer_size": 1050,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 275.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Disable Package"
+			],
+			[
+				"set",
+				"Set Syntax: PHP"
+			],
+			[
+				"paca",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"insta",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"pins",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"prefre",
+				"Preferences: Settings - Default"
+			],
+			[
+				"PA",
+				"Package Control: Satisfy Dependencies"
+			]
+		],
+		"width": 648.0
+	},
+	"console":
+	{
+		"height": 872.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Xampp/htdocs/reminder",
+		"/D/Xampp/htdocs/reminder/controller",
+		"/D/Xampp/htdocs/reminder/model",
+		"/D/Xampp/htdocs/reminder/model/core",
+		"/D/Xampp/htdocs/reminder/view",
+		"/D/Xampp/htdocs/reminder/view/panitia",
+		"/D/Xampp/htdocs/reminder/view/senat",
+		"/D/Xampp/htdocs/reminder/view/super"
+	],
+	"file_history":
+	[
+		"/D/Xampp/htdocs/reminder/view/panitia/kegiatan.view.html",
+		"/D/Xampp/htdocs/reminder/model/core/Notif.php",
+		"/D/skripsi/ionic/reminder/www/js/controllers.js",
+		"/D/skripsi/ionic/reminder/www/js/app.js",
+		"/D/Xampp/htdocs/reminder/controller/reminder.js",
+		"/D/Xampp/htdocs/reminder/view/panitia/notifikasi-kegiatan.view.html",
+		"/D/Xampp/htdocs/reminder/controller/reminder-controller.js",
+		"/D/Xampp/htdocs/reminder/view/panitia/refrensi-kegiatan.view.html",
+		"/D/Xampp/htdocs/reminder/view/panitia/notifikasi.view.html",
+		"/D/Xampp/htdocs/reminder/model/core/Kegiatan.php",
+		"/D/Xampp/htdocs/reminder/model/core/User.php",
+		"/D/Xampp/htdocs/reminder/model/core/Panitia.php",
+		"/D/Xampp/htdocs/reminder/model/core/Ukm.php",
+		"/D/Xampp/htdocs/reminder/model/core/Model.php",
+		"/D/Xampp/htdocs/reminder/controller/reminder-services.js",
+		"/D/Xampp/htdocs/reminder/view/super/panitia.view.html",
+		"/D/Xampp/htdocs/reminder/view/panitia/setting.view.html",
+		"/D/Xampp/htdocs/reminder/view/panitia/sidenav.view.html",
+		"/D/Xampp/htdocs/reminder/view/balma/sidenav.view.html",
+		"/D/Xampp/htdocs/reminder/view/balma/notifikasi-kegiatan.view.html",
+		"/D/Xampp/htdocs/reminder/view/balma/refrensi-kegiatan.view.html",
+		"/D/Xampp/htdocs/reminder/view/senat/refrensi-kegiatan.view.html",
+		"/D/Xampp/htdocs/reminder/view/senat/notifikasi-kegiatan.view.html",
+		"/D/Xampp/htdocs/reminder/view/balma/kegiatan.view.html",
+		"/D/Xampp/htdocs/reminder/view/admin/sidenav.view.html",
+		"/D/Xampp/htdocs/reminder/view/balma/ormawa.view.html",
+		"/D/Xampp/htdocs/reminder/view/admin/panitia.view.html",
+		"/D/Xampp/htdocs/reminder/view/admin/notifikasi-kegiatan.view.html",
+		"/D/Xampp/htdocs/reminder/view/super/ormawa.view.html",
+		"/D/Xampp/htdocs/reminder/view/admin/ormawa.view.html",
+		"/D/Xampp/htdocs/reminder/view/admin/notifikasi.view.html",
+		"/D/Xampp/htdocs/reminder/view/super/kegiatan.view.html",
+		"/D/Xampp/htdocs/reminder/view/senat/sidenav.view.html",
+		"/D/Xampp/htdocs/reminder/view/senat/kegiatan.view.html",
+		"/D/Xampp/htdocs/reminder/view/admin/refrensi-kegiatan.view.html",
+		"/D/Xampp/htdocs/reminder/view/admin/kegiatan.view.html",
+		"/D/Xampp/htdocs/reminder/view/super/notifikasi-kegiatan.view.html",
+		"/D/Xampp/htdocs/reminder/view/admin/admin.view.html",
+		"/D/Xampp/htdocs/reminder/view/login.view.html",
+		"/D/skripsi/aset gambar/android-access-alarm.svg",
+		"/D/Xampp/htdocs/reminder/view/super/admin.view.html",
+		"/D/Xampp/htdocs/reminder/view/super/addpanitia.template.html",
+		"/D/Xampp/htdocs/reminder/view/super/refrensi-kegiatan.view.html",
+		"/D/Xampp/htdocs/reminder/view/super/notifikasi.view.html",
+		"/C/Users/Ade Novan/Pictures/PK III Reminder System_files/reminder.css",
+		"/D/Xampp/htdocs/reminder/css/reminder.css",
+		"/D/Xampp/htdocs/reminder/view/super/setting.view.html",
+		"/D/Xampp/htdocs/reminder/view/admin/setting.view.html",
+		"/D/Xampp/htdocs/reminder/index.html",
+		"/D/Xampp/htdocs/reminder/sql",
+		"/D/Xampp/htdocs/reminder/view/ormawa/sidenav.view.html",
+		"/D/Xampp/htdocs/reminder/view/ormawa/kegiatan.view.html",
+		"/D/Xampp/htdocs/reminder/view/super/sidenav.view.html",
+		"/D/Xampp/htdocs/reminder/view/super/addadmin.template.html",
+		"/D/Xampp/htdocs/reminder/view/super/editpanitia.template.html",
+		"/D/Xampp/htdocs/reminder/view/super/deleteormawa.template.html",
+		"/D/Xampp/htdocs/reminder/view/super/deletekegiatan.template.html",
+		"/D/Xampp/htdocs/reminder/view/super/editormawa.template.html",
+		"/D/Xampp/htdocs/reminder/view/super/addormawa.template.html",
+		"/D/Xampp/htdocs/reminder/view/super/editadmin.template.html",
+		"/D/Xampp/htdocs/reminder/view/super/editkegiatan.template.html",
+		"/D/Xampp/htdocs/reminder/view/super/deletepanitia.template.html",
+		"/D/Xampp/htdocs/reminder/view/super/deleteadmin.template.html",
+		"/D/Xampp/htdocs/reminder/controller/deleteadmin.template.html",
+		"/D/Xampp/htdocs/reminder/temp.html",
+		"/D/Xampp/htdocs/reminder/image/user/56b6aef4bf51d.jpg",
+		"/D/skripsi/material-start.html",
+		"/D/Xampp/htdocs/reminder/view/sidenav.view.html",
+		"/D/Xampp/htdocs/Manajemen-Tugas/index.php",
+		"/D/Xampp/htdocs/reminder/view/super/addkegiatan.template.html",
+		"/D/Xampp/htdocs/reminder/libs/bower_components/ng-file-upload/ng-file-upload-all.js",
+		"/D/Xampp/htdocs/reminder/view/kegiatan.view.html",
+		"/D/Xampp/htdocs/reminder/view/super.view.html",
+		"/D/Xampp/htdocs/reminder/model/index.php",
+		"/D/Xampp/htdocs/reminder/reminder.sublime-project",
+		"/C/Users/Ade Novan/AppData/Roaming/Sublime Text 3/Packages/User/Xdebug.sublime-settings",
+		"/C/Users/Ade Novan/AppData/Roaming/Sublime Text 3/Packages/Xdebug Client/Xdebug.sublime-settings",
+		"/D/Xampp/htdocs/reminder/libs/bower_components/angular-material/angular-material.js",
+		"/D/Xampp/htdocs/reminder/libs/bower_components/angular/angular.js",
+		"/D/Xampp/htdocs/reminder/model/core/ImageManipulator.php",
+		"/D/Xampp/htdocs/reminder/view/login.view.htm",
+		"/D/Xampp/htdocs/reminder/libs/bower_components/angular-material-icons/angular-material-icons.css",
+		"/D/Xampp/htdocs/reminder/libs/bower_components/angular-material-icons/bower.json",
+		"/D/Xampp/htdocs/reminder/libs/bower_components/angular-material-icons/angular-material-icons.js",
+		"/D/Xampp/htdocs/reminder/libs/bower_components/angular/angular.min.js",
+		"/D/Xampp/htdocs/reminder/model/Router.php",
+		"/D/Xampp/htdocs/Manajemen-Tugas/backend/plus-karyawan.proses.php",
+		"/D/Xampp/htdocs/reminder/model/config.php",
+		"/D/Xampp/htdocs/Manajemen-Tugas/backend/notif.proses.php",
+		"/D/Xampp/htdocs/Manajemen-Tugas/backend/edit-acc.proses.php",
+		"/D/Xampp/htdocs/reminder/model/.htaccess",
+		"/D/Xampp/htdocs/Manajemen-Tugas/backend/login.proses.php",
+		"/D/Xampp/htdocs/Manajemen-Tugas/backend/update-komentar.php",
+		"/D/Xampp/htdocs/Manajemen-Tugas/backend/plus.proses.php",
+		"/D/Xampp/htdocs/Manajemen-Tugas/backend/tugas.proses.php",
+		"/D/Xampp/htdocs/Manajemen-Tugas/backend/ambil-komentar.php",
+		"/D/Xampp/htdocs/reminder/model/core/.htaccess",
+		"/D/Xampp/htdocs/reminder/model/core/Router.php",
+		"/D/Xampp/htdocs/reminder/model/Model.php",
+		"/D/Xampp/htdocs/reminder/model/User.php",
+		"/D/Xampp/htdocs/reminder/model/core/config.php",
+		"/D/Xampp/htdocs/pmapssite/libs/core/modelmapper.lib.php",
+		"/D/Xampp/htdocs/pmapssite/libs/core/model.lib.php",
+		"/D/Xampp/htdocs/pmapssite/libs/core/singleton.lib.php",
+		"/D/Xampp/htdocs/pmapssite/libs/core/connection.lib.php",
+		"/D/Xampp/htdocs/Manajemen-Tugas/backend/lib-connection.php",
+		"/D/Xampp/htdocs/pmapssite/libs/core/data.lib.php",
+		"/D/Xampp/htdocs/pmapssite/libs/core/router.lib.php",
+		"/D/Xampp/htdocs/pmapssite/index.php",
+		"/D/Xampp/htdocs/pmapssite/config.php",
+		"/D/Xampp/htdocs/pmapssite/libs/core/setting.lib.php",
+		"/D/Xampp/htdocs/pmapssite/libs/core/controller.lib.php",
+		"/D/Xampp/htdocs/pmapssite/libs/core/view.lib.php",
+		"/C/Users/Ade Novan/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Ade Novan/AppData/Roaming/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/Ade Novan/AppData/Roaming/Sublime Text 3/Packages/User/Plain text.sublime-settings",
+		"/C/Users/Ade Novan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Ade Novan/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Ade Novan/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Ade Novan/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Ade Novan/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 54.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"notifikasiKegiatan",
+			"admin",
+			"getEditForm",
+			"super",
+			"navigate",
+			"hakakses",
+			"ng-show",
+			"ormawaCtrl",
+			"UKM",
+			"ukm",
+			"adminListCtrl",
+			"parent::",
+			"$watch",
+			"senat",
+			"balma",
+			"ormawa",
+			"addKegiatan",
+			"theme",
+			"the",
+			"theme",
+			"input",
+			"$this->alias",
+			"selectUkm",
+			"kegiatanList",
+			"'logo_ukm'",
+			"ukm",
+			"$_FILES[\"logo_ukm\"]",
+			"editPanitia",
+			"TODO",
+			"Delete()",
+			"Delete",
+			"foto_user",
+			"catch",
+			"\"foto_user",
+			"directive",
+			"[$key]",
+			"[$i]",
+			"$i",
+			"hakakses",
+			"!-->\n",
+			"date",
+			"Data masih kosong",
+			"date",
+			"add",
+			"$mdDateLocaleProvider",
+			"$scope.",
+			"[$key]",
+			"foto_evaluasi",
+			"deleteEvaluasi",
+			"logo_ukm",
+			"    <",
+			"md-primary",
+			"logo_ukm",
+			"public",
+			"protected",
+			"public",
+			"limit",
+			"LIMIT",
+			" \";",
+			"user",
+			");\n",
+			"foto_user",
+			"User",
+			"foto_user",
+			"}\n",
+			"NULL"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/skripsi/ionic/reminder/www/js/services.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1050,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 42.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "reminder.sublime-project",
+	"replace":
+	{
+		"height": 80.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"model\\core\\User.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"15":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"16":
+				{
+					"group": 0,
+					"index": 2
+				},
+				"17":
+				{
+					"group": 0,
+					"index": 4
+				},
+				"18":
+				{
+					"group": 0,
+					"index": 5
+				},
+				"19":
+				{
+					"group": 0,
+					"index": 6
+				},
+				"20":
+				{
+					"group": 0,
+					"index": 7
+				},
+				"21":
+				{
+					"group": 0,
+					"index": 8
+				},
+				"31":
+				{
+					"group": 0,
+					"index": 3
+				},
+				"33":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"40":
+				{
+					"group": 2,
+					"index": 1
+				},
+				"41":
+				{
+					"group": 1,
+					"index": 0
+				},
+				"42":
+				{
+					"group": 2,
+					"index": 0
+				},
+				"43":
+				{
+					"group": 1,
+					"index": 1
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						2,
+						1
+					],
+					[
+						0,
+						1,
+						1,
+						2
+					],
+					[
+						1,
+						1,
+						2,
+						2
+					]
+				],
+				"cols":
+				[
+					0.0,
+					0.5,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					0.533262935586,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 613.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
